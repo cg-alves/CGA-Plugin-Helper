@@ -22,7 +22,7 @@ Stand out features are:
 * Easy, simple to understand code, that can be easily modified to suit your needs;
 * Use of Wordpress API to provide seamless integration.
 
-You can check out the source code, submit patches, improvements or translations, and report bugs at the project's github page: [placeholder].
+You can check out the source code, submit patches, improvements or translations, and report bugs at the project's github page: https://github.com/cg-alves/Pragmatica-Plugin-Helper.
 
 == Installation ==
 
