@@ -5,7 +5,7 @@
  */
 /*
 Plugin Name: Pragmatica Plugin Helper
-Plugin URI: https://pragmatica.pt/
+Plugin URI: https://github.com/cg-alves/Pragmatica-Plugin-Helper
 Description: This plugin will assist you in the installation of plugins, allowing you to choose from a curated list, manually search for plugins and export any active plugins into a text list.
 Author: Carlos Alves
 Author URI: https://pragmatica.pt/
