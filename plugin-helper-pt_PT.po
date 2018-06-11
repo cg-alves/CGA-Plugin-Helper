@@ -1,0 +1,214 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pragmática Plugin Helper 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-11 14:56+0100\n"
+"PO-Revision-Date: 2018-06-11 14:58+0100\n"
+"Last-Translator: Carlos Alves <carlos.alves@disroot.org>\n"
+"Language-Team: Carlos Alves <carlos.alves@disroot.org>\n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../plugin-helper.php:31
+msgid ""
+"This plugin will assist you in the installation of plugins, allowing you to "
+"choose from a curated list, manually search for plugins and export any "
+"active plugins into a text list."
+msgstr ""
+"Este plugin irá auxilia-lo na instalação de plugins, permitindo que escolha "
+"de uma lista curada, pesquise manualmente, ou que exporte quaisquer plugins "
+"activos para uma lista."
+
+#: ../plugin-helper.php:34
+msgid "Plugin Helper"
+msgstr "Auxiliar de Plugins"
+
+#: ../plugin-helper.php:35 ../plugin-helper.php:38
+msgid "Installer"
+msgstr "Instalador de Plugins"
+
+#: ../plugin-helper.php:36 ../plugin-helper.php:194
+msgid "Plugin List"
+msgstr "Lista de Plugins"
+
+#: ../plugin-helper.php:37 ../plugin-helper.php:321
+msgid "Plugin Search"
+msgstr "Pesquisa de Plugins"
+
+#: ../plugin-helper.php:39
+msgid "Plugin Export"
+msgstr "Exportação de Plugins"
+
+#: ../plugin-helper.php:46
+msgid "Pragmatica Plugin Helper"
+msgstr "Auxiliar de Plugins Pragmática"
+
+#: ../plugin-helper.php:50
+msgid "Please choose your desired installation method."
+msgstr "Por favor escolha o método pelo qual deseja instalar os plugins."
+
+#: ../plugin-helper.php:55 ../plugin-helper.php:372
+msgid "Curated Plugin List"
+msgstr "Lista Curada de Plugins"
+
+#: ../plugin-helper.php:58
+msgid "Manual Search (Advanced)"
+msgstr "Pesquisa Manual (Avançado)"
+
+#: ../plugin-helper.php:65
+msgid ""
+"Pragmatica's curated plugin list gives you easy access to several trusted "
+"plugins. Simply choose which plugins you want and their installation and "
+"activation will occur without any further action required. With this list, "
+"you can be sure that the plugins you're installing are trustworthy."
+msgstr ""
+"A lista curada de plugins da Pragmática coloca vários plugins nos quais "
+"confiamos ao seu dispor, num local conveniente. Basta escolher os plugins "
+"que deseja instalar e o processo será concluído sem intervenção necessária "
+"do utilizador. Com esta lista pode ter a plena confiança de que os plugins "
+"que está a instalar são seguros."
+
+#: ../plugin-helper.php:68
+msgid ""
+"This search option is for more advanced users who want to automate the "
+"installation and deployment process. It allows you to name the plugins you "
+"want, and install and activate them in a single click."
+msgstr ""
+"Esta opção de pesquisa dirige-se a utilizadores mais avançados e permite "
+"colocar o nome de todos os plugins que pretende instalar, e que estes sejam "
+"instalados e activos num só click."
+
+#: ../plugin-helper.php:75
+msgid "List"
+msgstr "Lista"
+
+#: ../plugin-helper.php:78
+msgid "Search"
+msgstr "Pesquisa"
+
+#: ../plugin-helper.php:83
+msgid "Export Active Plugins"
+msgstr "Exportar Plugins Activos"
+
+#: ../plugin-helper.php:98
+msgid "Installing the selected plugins."
+msgstr "A instalar os plugins seleccionados."
+
+#: ../plugin-helper.php:105
+msgid "Activating the installed plugins."
+msgstr "A activar os plugins instalados."
+
+#: ../plugin-helper.php:112
+msgid ""
+"The function has ended. If your plugins have installed correctly, you may "
+"delete this plugin."
+msgstr ""
+"A função terminou. Se os plugins foram instalados com sucesso, pode remover "
+"este plugin."
+
+#: ../plugin-helper.php:115
+msgid "Return to the Main admin page"
+msgstr "Regressar à página principal de Administração"
+
+#: ../plugin-helper.php:116
+msgid "Return to the Plugins page"
+msgstr "Regressar à página de Plugins"
+
+#: ../plugin-helper.php:133
+msgid "Installing plugin:"
+msgstr "A instalar o plugin:"
+
+#: ../plugin-helper.php:140
+msgid "Skipping plugin:"
+msgstr "A saltar o plugin:"
+
+#: ../plugin-helper.php:158
+msgid "Activating plugin:"
+msgstr "A activar o plugin:"
+
+#: ../plugin-helper.php:185
+msgid "Active Plugin Export"
+msgstr "Exportação de Plugins Activos"
+
+#: ../plugin-helper.php:186
+msgid "Warning!"
+msgstr "Atenção!"
+
+#: ../plugin-helper.php:187
+msgid ""
+"It's advised that you deactivate any custom plugins (those that don't come "
+"from the Wordpress store) before you export your active plugin list, as "
+"those may result in you importing unwanted plugins."
+msgstr ""
+"É aconselhada a desactivação de \"custom plugins\" (plugins não "
+"proveninentes da loja do Wordpress) antes de exportar, pois estes podem "
+"resultar na importação de plugins não desejados."
+
+#: ../plugin-helper.php:188
+msgid ""
+"You can import plugins by simply copying the list in the text box bellow, "
+"and then pasting it in the 'Search' option on this plugin's homepage."
+msgstr ""
+"A importação é feita simplesmente copiando a lista escrita na caixa de texto "
+"abaixo, e colando o texto na opção de \"Pesquisa\" na página principal deste "
+"plugin."
+
+#: ../plugin-helper.php:208 ../plugin-helper.php:322 ../plugin-helper.php:373
+msgid "Return to the Plugin's Homepage"
+msgstr "Regressar à Página Principal do Plugin"
+
+#: ../plugin-helper.php:326
+msgid ""
+"Please insert the name of the plugins you wish to install in the format "
+"bellow."
+msgstr ""
+"Por favor introduza os nomes dos plugins que deseja instalar, no formato "
+"indicado."
+
+# It's very important to have '&#10;' as that will print a line break, which the plugin requires to import.
+#: ../plugin-helper.php:337
+msgid ""
+"Insert the name of the plugins that you wish to install separated by either "
+"apostrophes or quotation marks and Return.&#10;&#10;Example:&#10;\"yoast"
+"\"&#10;\"beaver builder\"&#10;\"tinymce\""
+msgstr ""
+"Introduza os nomes dos plugins que pretende instalar entre apóstrofos ou "
+"aspas e separados por Enter. &#10;&#10;Exemplo:&#10;\"yoast\"&#10;\"beaver "
+"builder\"&#10;\"tinymce\""
+
+#: ../plugin-helper.php:344 ../plugin-helper.php:479
+msgid "Install Plugins"
+msgstr "Instalar os Plugins"
+
+#: ../plugin-helper.php:387
+msgid "Please select the plugins you wish to install."
+msgstr "Por favor seleccione os plugins que deseja instalar."
+
+#: ../plugin-helper.php:393
+msgid "Search Engine Optimization"
+msgstr "Optimização para Motores de Busca (SEO)"
+
+#: ../plugin-helper.php:398 ../plugin-helper.php:427 ../plugin-helper.php:455
+msgid "Plugin Name"
+msgstr "Nome do Plugin"
+
+#: ../plugin-helper.php:399 ../plugin-helper.php:428 ../plugin-helper.php:456
+msgid "Selection"
+msgstr "Selecção"
+
+#: ../plugin-helper.php:422
+msgid "Management"
+msgstr "Gestão"
+
+#: ../plugin-helper.php:450
+msgid "Miscellaneous"
+msgstr "Miscelânea"
+
+#~ msgid "Return to the Plugin's homepage"
+#~ msgstr "Regressar à Página Principal do Plugin"
