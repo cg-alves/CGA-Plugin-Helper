@@ -1,5 +1,5 @@
 === Pragmatica Plugin Helper ===
-Contributors: carlos.alves
+Contributors: cgalves
 Tags: plugins, management, end-user, developer
 Requires at least: 4.9.6
 Tested up to: 4.9.6
@@ -42,6 +42,14 @@ e.g.
 3. Manual plugin search
 
 == Changelog ==
+
+= 1.0.6 =
+* Changed $_SESSION to only start with init, and to die on logout
+* Added option to load a curated plugin list from the uploads directory of Wordpress
+* Plugin now checks if upload directory exists and creates it if it doesn't
+* Added 'pph' prefix to functions
+* Removed erroneously placed error reporting 
+* Fixed some translation strings
 
 = 1.0.0 =
 * First Stable Release
