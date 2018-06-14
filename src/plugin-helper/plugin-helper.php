@@ -1,7 +1,7 @@
 <?php
 /**
  * @package Pragmatica_Plugin_Helper
- * @version 1.1.0
+ * @version 1.2.0
  */
 /*
 Plugin Name: Pragmatica Plugin Helper
@@ -9,7 +9,7 @@ Plugin URI: https://github.com/cg-alves/Pragmatica-Plugin-Helper
 Description: This plugin will assist you in the installation of plugins, allowing you to choose from a curated list, manually search for plugins and export any active plugins into a text list.
 Author: Carlos Alves
 Author URI: https://pragmatica.pt/
-Version: 1.1.0
+Version: 1.2.0
 License: GPLv3
 Text Domain: pragmatica-plugin-helper
 Domain Path: /lang/
@@ -19,9 +19,6 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 add_action( 'admin_menu', 'pph_installer_menu' );
 add_action( 'plugins_loaded', 'pph_load_textdomain' );
-add_action( 'init', 'pph_session_starter', 1 );
-add_action( 'wp_logout', 'pph_session_ender' );
-add_action( 'wp_login', 'pph_session_ender' );
 
 //Loads translations
 function pph_load_textdomain() {
@@ -44,14 +41,4 @@ function pph_installer_menu() {
     add_submenu_page( __( 'Plugin Search', 'pragmatica-plugin-helper' ), __( 'Plugin Search', 'pragmatica-plugin-helper' ), 'Whatever You Want','manage_options', 'plugin-searcher', 'pph_plugin_searcher' );
     add_submenu_page( __( 'Installer', 'pragmatica-plugin-helper' ), __( 'Installer', 'pragmatica-plugin-helper' ), 'Whatever You Want','manage_options', 'plugin-installer-main', 'pph_main' );
     add_submenu_page( __( 'Plugin Export',  'pragmatica-plugin-helper' ), __( 'Plugin Export', 'pragmatica-plugin-helper' ), 'Whatever You Want','manage_options', 'plugin-exporter', 'pph_export_plugins' );
-}
-
-function pph_session_starter(){
-    if(!session_id()) {
-        session_start();
-    }
-}
-
-function pph_session_ender(){
-    session_destroy ();
 }
