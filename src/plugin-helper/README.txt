@@ -12,7 +12,7 @@ This plugin will assist you in the installation of plugins, allowing you to choo
 
 == Description ==
 
-This plugin is designed to assist end users in the installation of plugins. It allows you to choose from a curated list, manually search for plugins from the WP Store and export all currently active plugins into a list that can later be used to import them. This can be very useful for faster deployments and can be customized by developers who work for a lot of different customers to display a different list of curated plugins.
+This plugin is designed to assist end users in the installation of plugins. It allows you to choose from a curated list, manually search for plugins from the WP Store and export all currently active plugins into a list that can later be used to import them. This can be very useful for faster deployments.
 
 Stand out features are:
 * Download, install and activate plugins in a single click;
@@ -23,6 +23,8 @@ Stand out features are:
 * Use of Wordpress API to provide seamless integration.
 
 You can check out the source code, submit patches, improvements or translations, and report bugs at the project's github page: https://github.com/cg-alves/Pragmatica-Plugin-Helper.
+
+Warning: This plugin makes use of PHP Sessions and MAY break caching.
 
 == Installation ==
 
