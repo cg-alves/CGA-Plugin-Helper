@@ -1,5 +1,8 @@
 <?php
 
+//Prints a tabled form with all curated plugins.
+//You must edit this function if you've added any categories in "function curated_plugin_list()".
+
 function pph_plugin_form( $plugins ) {
         ?>
             <table class='wp-list-table widefat striped tags'>
