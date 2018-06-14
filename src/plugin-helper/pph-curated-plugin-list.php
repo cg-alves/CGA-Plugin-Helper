@@ -1,5 +1,6 @@
 <?php
 
+//Default curated plugin list.
 
 $i=1;
 $curated_plugins = array(
