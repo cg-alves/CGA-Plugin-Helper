@@ -1,5 +1,5 @@
-# Pragmatica Plugin Helper
-A Wordpress Plugin Helper, designed to help the end user install plugins. Powered by: [Pragmática, Lda](https://pragmatica.pt/).
+# CGA Plugin Helper
+A Wordpress Plugin Helper, designed to help the end user install plugins.
 
 ## Features
 The Pragmatica Plugin Helper is a plugin designed for end-users and sys-admins alike.
