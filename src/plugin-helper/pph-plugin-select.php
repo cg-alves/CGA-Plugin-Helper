@@ -35,7 +35,7 @@ if ( isset ( $_POST['plugin_select'] ) ) {
             $plugins[$plugin_field['id']] [ 'apply' ] = '0' ;
         }
     }
-    set_transient('plugin', $plugins, 30 * MINUTE_IN_SECONDS);
+    set_transient( 'plugin', $plugins, 30 * MINUTE_IN_SECONDS );
     echo '<script>window.location.href="admin.php?page=plugin-installer-main"</script>'; //Workaround for redirecting within the wp-admin page.
 }
 ?>
