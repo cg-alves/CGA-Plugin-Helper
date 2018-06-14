@@ -78,6 +78,6 @@ function pph_plugin_search( $search ) {
         $i++;
     }
     
-    set_transient('plugin', $plugins, 30 * MINUTE_IN_SECONDS);
+    set_transient( 'plugin', $plugins, 30 * MINUTE_IN_SECONDS );
     echo '<script>window.location.href="admin.php?page=plugin-installer-main"</script>'; //Workaround for redirecting within the wp-admin page.
 }
