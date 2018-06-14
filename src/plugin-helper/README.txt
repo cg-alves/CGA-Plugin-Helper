@@ -24,8 +24,6 @@ Stand out features are:
 
 You can check out the source code, submit patches, improvements or translations, and report bugs at the project's github page: https://github.com/cg-alves/Pragmatica-Plugin-Helper.
 
-Warning: This plugin makes use of PHP Sessions and MAY break caching.
-
 == Installation ==
 
 This section describes how to install the plugin and get it working.
