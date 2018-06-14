@@ -13,7 +13,7 @@ The Pragmatica Plugin Helper is a plugin designed for end-users and sys-admins a
 * Easy to understand and modify code;
 * You can provide your clients with your own set of curated plugins;
 * Uses Wordpress' APIs for plugin management;
-* GPL-3 license -- Fork away!
+* GPLv3 license - Fork away!
 
 ## Screenshots
 
