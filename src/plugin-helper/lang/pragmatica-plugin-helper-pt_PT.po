@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pragmática Plugin Helper 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-13 15:49+0100\n"
-"PO-Revision-Date: 2018-06-13 15:49+0100\n"
+"POT-Creation-Date: 2018-06-14 12:42+0100\n"
+"PO-Revision-Date: 2018-06-14 12:43+0100\n"
 "Last-Translator: Carlos Alves <carlos.alves@disroot.org>\n"
 "Language-Team: Carlos Alves <carlos.alves@disroot.org>\n"
 "Language: pt_PT\n"
@@ -41,7 +41,7 @@ msgstr "Instalador de Plugins"
 msgid "Plugin List"
 msgstr "Lista de Plugins"
 
-#: ../plugin-helper.php:40 ../plugin-helper.php:338
+#: ../plugin-helper.php:40 ../plugin-helper.php:305
 msgid "Plugin Search"
 msgstr "Pesquisa de Plugins"
 
@@ -53,7 +53,7 @@ msgstr "Exportação de Plugins"
 msgid "Please choose your desired installation method."
 msgstr "Por favor escolha o método pelo qual deseja instalar os plugins."
 
-#: ../plugin-helper.php:69 ../plugin-helper.php:391
+#: ../plugin-helper.php:69 ../plugin-helper.php:358
 msgid "Curated Plugin List"
 msgstr "Lista Curada de Plugins"
 
@@ -159,11 +159,11 @@ msgstr ""
 "abaixo, e colando o texto na opção de \"Pesquisa\" na página principal deste "
 "plugin."
 
-#: ../plugin-helper.php:224 ../plugin-helper.php:339 ../plugin-helper.php:392
+#: ../plugin-helper.php:224 ../plugin-helper.php:306 ../plugin-helper.php:359
 msgid "Return to the Plugin's Homepage"
 msgstr "Regressar à Página Principal do Plugin"
 
-#: ../plugin-helper.php:343
+#: ../plugin-helper.php:310
 msgid ""
 "Please insert the name of the plugins you wish to install in the format "
 "bellow."
@@ -171,12 +171,12 @@ msgstr ""
 "Por favor introduza os nomes dos plugins que deseja instalar, no formato "
 "indicado."
 
-#: ../plugin-helper.php:347
+#: ../plugin-helper.php:314
 msgid "Plugins to Install"
 msgstr "Plugins a Instalar"
 
 # It's very important to have '&#10;' as that will print a line break, which the plugin requires to import.
-#: ../plugin-helper.php:354
+#: ../plugin-helper.php:321
 msgid ""
 "Insert the name of the plugins that you wish to install separated by either "
 "apostrophes or quotation marks and Return.&#10;&#10;Example:&#10;\"yoast"
@@ -186,31 +186,59 @@ msgstr ""
 "aspas e separados por Enter. &#10;&#10;Exemplo:&#10;\"yoast\"&#10;\"beaver "
 "builder\"&#10;\"tinymce\""
 
-#: ../plugin-helper.php:361 ../plugin-helper.php:498
+#: ../plugin-helper.php:328 ../plugin-helper.php:633
 msgid "Install Plugins"
 msgstr "Instalar os Plugins"
 
-#: ../plugin-helper.php:406
+#: ../plugin-helper.php:373
 msgid "Please select the plugins you wish to install."
 msgstr "Por favor seleccione os plugins que deseja instalar."
 
-#: ../plugin-helper.php:412
+#: ../plugin-helper.php:379
 msgid "Search Engine Optimization"
 msgstr "Optimização para Motores de Busca (SEO)"
 
-#: ../plugin-helper.php:417 ../plugin-helper.php:446 ../plugin-helper.php:474
+#: ../plugin-helper.php:384 ../plugin-helper.php:413 ../plugin-helper.php:441
+#: ../plugin-helper.php:469 ../plugin-helper.php:497 ../plugin-helper.php:525
+#: ../plugin-helper.php:553 ../plugin-helper.php:581 ../plugin-helper.php:609
 msgid "Plugin Name"
 msgstr "Nome do Plugin"
 
-#: ../plugin-helper.php:418 ../plugin-helper.php:447 ../plugin-helper.php:475
+#: ../plugin-helper.php:385 ../plugin-helper.php:414 ../plugin-helper.php:442
+#: ../plugin-helper.php:470 ../plugin-helper.php:498 ../plugin-helper.php:526
+#: ../plugin-helper.php:554 ../plugin-helper.php:582 ../plugin-helper.php:610
 msgid "Selection"
 msgstr "Selecção"
 
-#: ../plugin-helper.php:441
+#: ../plugin-helper.php:408
+msgid "Design"
+msgstr "Design"
+
+#: ../plugin-helper.php:436
+msgid "Marketing"
+msgstr "Marketing"
+
+#: ../plugin-helper.php:464
 msgid "Management"
 msgstr "Gestão"
 
-#: ../plugin-helper.php:469
+#: ../plugin-helper.php:492
+msgid "Analytics"
+msgstr "Analítica"
+
+#: ../plugin-helper.php:520
+msgid "Social"
+msgstr "Redes Sociais"
+
+#: ../plugin-helper.php:548
+msgid "Performance"
+msgstr "Desempenho"
+
+#: ../plugin-helper.php:576
+msgid "Security"
+msgstr "Segurança"
+
+#: ../plugin-helper.php:604
 msgid "Miscellaneous"
 msgstr "Miscelânea"
 
