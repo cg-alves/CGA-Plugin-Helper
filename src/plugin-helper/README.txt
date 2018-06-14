@@ -1,4 +1,4 @@
-=== Pragmatica Plugin Helper ===
+=== CGA Plugin Helper ===
 Contributors: cgalves
 Tags: plugins, management, end-user, developer
 Requires at least: 4.9.6
@@ -22,7 +22,7 @@ Stand out features are:
 * Easy, simple to understand code, that can be easily modified to suit your needs;
 * Use of Wordpress API to provide seamless integration.
 
-You can check out the source code, submit patches, improvements or translations, and report bugs at the project's github page: https://github.com/cg-alves/Pragmatica-Plugin-Helper.
+You can check out the source code, submit patches, improvements or translations, and report bugs at the project's github page: https://github.com/cg-alves/CGA-Plugin-Helper.
 
 == Installation ==
 
@@ -45,6 +45,7 @@ e.g.
 
 = 1.2.0 =
 * Removed $_SESSIONS dependency. This plugin will no longer conflict with caching.
+* Changed branding.
 
 = 1.1.0 =
 * Added new curated plugins and categories
