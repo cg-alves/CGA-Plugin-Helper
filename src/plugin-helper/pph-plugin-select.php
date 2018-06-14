@@ -23,7 +23,7 @@ return ( $curated_plugins );
 }
 
 //This function allows the end user to select the plugins they wish to install.
-//It takes the form data from $_POST and will store it in $_SESSION if the user ticked the selection box.
+//It takes the form data from $_POST and will store it in a transient if the user ticked the selection box.
 function pph_plugin_selector() {
 $plugins = pph_curated_plugin_list();
 if ( isset ( $_POST['plugin_select'] ) ) {
@@ -35,7 +35,7 @@ if ( isset ( $_POST['plugin_select'] ) ) {
             $plugins[$plugin_field['id']] [ 'apply' ] = '0' ;
         }
     }
-    $_SESSION['plugin'] = $plugins;
+    set_transient('plugin', $plugins, 30 * MINUTE_IN_SECONDS);
     echo '<script>window.location.href="admin.php?page=plugin-installer-main"</script>'; //Workaround for redirecting within the wp-admin page.
 }
 ?>
