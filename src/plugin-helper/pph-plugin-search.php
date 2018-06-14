@@ -1,43 +1,5 @@
 <?php
 
-//This function will search for the plugins in the WP store, save the result in an array, and store it to $_SESSION so it can later be used by the installer function.
-function pph_plugin_search( $search ) {
-    include ( './includes/plugin-install.php' );
-    $i = 1;
-    
-    foreach ( $search as $search_term ) {
-        $each_search = plugins_api( 'query_plugins', $args = array(
-                                                "search" => $search_term,
-                                                "per_page" => 1,
-                                                "page" => 1,
-                                                "fields" => array(
-                                                    'info' => false,
-                                                    'short_description' => false,
-                                                    'description' => false,
-                                                    'sections' => false,
-                                                    'ratings' => false,
-                                                    'downnload_link' => true,
-                                                    'homepage' => false,
-                                                    'versions' => false,
-                                                    )
-                                                ) 
-                        );
-
-        foreach ( $each_search -> plugins as $each_plugin => $plugin_field){
-            $plugins[$i] ['id'] = $i;
-            $plugins[$i] ['plugin_name'] = $plugin_field -> name;
-            $plugins[$i] ['plugin_uri'] = $plugin_field -> download_link;
-            $plugins[$i] ['apply'] = '1';
-        }
-
-        $i++;
-    }
-    
-    $_SESSION['plugin'] = $plugins;
-    echo '<script>window.location.href="admin.php?page=plugin-installer-main"</script>'; //Workaround for redirecting within the wp-admin page.
-}
-
-
 // This function sets up manual searching of plugins.
 // You can use it to install several plugins at once.
 function pph_plugin_searcher() {
@@ -81,4 +43,41 @@ function pph_plugin_searcher() {
             </table>
         </div>
     <?php
+}
+
+//This function will search for the plugins in the WP store, save the result in an array, and store it to a transient so it can later be used by the installer function.
+function pph_plugin_search( $search ) {
+    include ( './includes/plugin-install.php' );
+    $i = 1;
+    
+    foreach ( $search as $search_term ) {
+        $each_search = plugins_api( 'query_plugins', $args = array(
+                                                "search" => $search_term,
+                                                "per_page" => 1,
+                                                "page" => 1,
+                                                "fields" => array(
+                                                    'info' => false,
+                                                    'short_description' => false,
+                                                    'description' => false,
+                                                    'sections' => false,
+                                                    'ratings' => false,
+                                                    'downnload_link' => true,
+                                                    'homepage' => false,
+                                                    'versions' => false,
+                                                    )
+                                                ) 
+                        );
+
+        foreach ( $each_search -> plugins as $each_plugin => $plugin_field){
+            $plugins[$i] ['id'] = $i;
+            $plugins[$i] ['plugin_name'] = $plugin_field -> name;
+            $plugins[$i] ['plugin_uri'] = $plugin_field -> download_link;
+            $plugins[$i] ['apply'] = '1';
+        }
+
+        $i++;
+    }
+    
+    set_transient('plugin', $plugins, 30 * MINUTE_IN_SECONDS);
+    echo '<script>window.location.href="admin.php?page=plugin-installer-main"</script>'; //Workaround for redirecting within the wp-admin page.
 }
