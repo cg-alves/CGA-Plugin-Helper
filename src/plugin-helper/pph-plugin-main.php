@@ -1,5 +1,4 @@
 <?php
-
 // This core function will be executed whenever the end user chooses to install plugins.
 // It executes several other functions in order to install and activate the plugins.
 function pph_main() {
@@ -35,7 +34,7 @@ function pph_main() {
 // This function will recursively install all plugins based on whatever plugin data is in $_SESSION.
 function pph_plugin_installer() {
     add_action('plugins_loaded','pph_session_starter');
-    $plugins =  ( $_SESSION['plugin'] );
+    $plugins = get_transient( 'plugin' );
     ?>
         <br />
     <?php
@@ -59,7 +58,7 @@ function pph_plugin_installer() {
 // This function will activate all plugins installed by the previous functions.
 function pph_plugin_activation() {
     add_action('plugins_loaded','pph_session_starter');
-    $selected_plugins = ( $_SESSION['plugin'] );
+    $selected_plugins = (get_transient( 'plugin' );
 // Returns an array with all plugin information.
     $installed_plugins = get_plugins();
     ?>
