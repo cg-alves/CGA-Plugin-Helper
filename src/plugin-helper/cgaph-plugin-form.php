@@ -3,22 +3,22 @@
 //Prints a tabled form with all curated plugins.
 //You must edit this function if you've added any categories in "function curated_plugin_list()".
 
-function pph_plugin_form( $plugins ) {
+function cgaph_plugin_form( $plugins ) {
         ?>
             <table class='wp-list-table widefat striped tags'>
-                <caption><h3><?php echo esc_attr( __( 'Please select the plugins you wish to install.', 'pragmatica-plugin-helper' ) ); ?></h3></caption>
+                <caption><h3><?php echo esc_attr( __( 'Please select the plugins you wish to install.', 'cga-plugin-helper' ) ); ?></h3></caption>
         <?php
 //Code for the SEO Category
         ?>
                 <thead>
                     <tr>
-                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Search Engine Optimization', 'pragmatica-plugin-helper' ) ); ?></h2></th>
+                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Search Engine Optimization', 'cga-plugin-helper' ) ); ?></h2></th>
                     </tr>
                 </thead>
                 <thead>
                     <tr>
-                        <th class='manage-column column-author' style='text-align:center;width:50%;'><h3><?php echo esc_attr( __( 'Plugin Name', 'pragmatica-plugin-helper' ) ); ?></h3></th>
-                        <th class='manage-column column-author' style='text-align:center;width:50%;'><h3><?php echo esc_attr( __( 'Selection', 'pragmatica-plugin-helper' ) ); ?></h3></th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'><h3><?php echo esc_attr( __( 'Plugin Name', 'cga-plugin-helper' ) ); ?></h3></th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'><h3><?php echo esc_attr( __( 'Selection', 'cga-plugin-helper' ) ); ?></h3></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -41,13 +41,13 @@ function pph_plugin_form( $plugins ) {
         ?>
                 <thead>
                     <tr>
-                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Design', 'pragmatica-plugin-helper' ) ); ?></h2> </th>
+                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Design', 'cga-plugin-helper' ) ); ?></h2> </th>
                     </tr>
                 </thead>
                 <thead>
                     <tr>
-                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
-                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'cga-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'cga-plugin-helper' ) ); ?></h3> </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -69,13 +69,13 @@ function pph_plugin_form( $plugins ) {
         ?>
                 <thead>
                     <tr>
-                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Marketing', 'pragmatica-plugin-helper' ) ); ?></h2> </th>
+                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Marketing', 'cga-plugin-helper' ) ); ?></h2> </th>
                     </tr>
                 </thead>
                 <thead>
                     <tr>
-                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
-                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'cga-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'cga-plugin-helper' ) ); ?></h3> </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -97,13 +97,13 @@ function pph_plugin_form( $plugins ) {
         ?>
                 <thead>
                     <tr>
-                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Management', 'pragmatica-plugin-helper' ) ); ?></h2> </th>
+                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Management', 'cga-plugin-helper' ) ); ?></h2> </th>
                     </tr>
                 </thead>
                 <thead>
                     <tr>
-                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
-                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'cga-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'cga-plugin-helper' ) ); ?></h3> </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -125,13 +125,13 @@ function pph_plugin_form( $plugins ) {
         ?>
                 <thead>
                     <tr>
-                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Analytics', 'pragmatica-plugin-helper' ) ); ?></h2> </th>
+                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Analytics', 'cga-plugin-helper' ) ); ?></h2> </th>
                     </tr>
                 </thead>
                 <thead>
                     <tr>
-                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
-                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'cga-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'cga-plugin-helper' ) ); ?></h3> </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -153,13 +153,13 @@ function pph_plugin_form( $plugins ) {
         ?>
                 <thead>
                     <tr>
-                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Social', 'pragmatica-plugin-helper' ) ); ?></h2> </th>
+                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Social', 'cga-plugin-helper' ) ); ?></h2> </th>
                     </tr>
                 </thead>
                 <thead>
                     <tr>
-                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
-                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'cga-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'cga-plugin-helper' ) ); ?></h3> </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -181,13 +181,13 @@ function pph_plugin_form( $plugins ) {
         ?>
                 <thead>
                     <tr>
-                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Performance', 'pragmatica-plugin-helper' ) ); ?></h2> </th>
+                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Performance', 'cga-plugin-helper' ) ); ?></h2> </th>
                     </tr>
                 </thead>
                 <thead>
                     <tr>
-                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
-                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'cga-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'cga-plugin-helper' ) ); ?></h3> </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -209,13 +209,13 @@ function pph_plugin_form( $plugins ) {
         ?>
                 <thead>
                     <tr>
-                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Security', 'pragmatica-plugin-helper' ) ); ?></h2> </th>
+                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Security', 'cga-plugin-helper' ) ); ?></h2> </th>
                     </tr>
                 </thead>
                 <thead>
                     <tr>
-                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
-                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'cga-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'cga-plugin-helper' ) ); ?></h3> </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -237,13 +237,13 @@ function pph_plugin_form( $plugins ) {
         ?>
                 <thead>
                     <tr>
-                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Miscellaneous', 'pragmatica-plugin-helper' ) ); ?></h2> </th>
+                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Miscellaneous', 'cga-plugin-helper' ) ); ?></h2> </th>
                     </tr>
                 </thead>
                 <thead>
                     <tr>
-                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
-                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'cga-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'cga-plugin-helper' ) ); ?></h3> </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -266,7 +266,7 @@ function pph_plugin_form( $plugins ) {
                 <tfoot>
                     <tr>
                         <td class='manage-column column-author' colspan='2' style='text-align:center;'>
-                            <input class='button button-primary button-hero load-customize hide-if-no-customize' type='submit' name='plugin_select' value='<?php echo esc_attr( __( 'Install Plugins', 'pragmatica-plugin-helper' ) ); ?>'/> </input>
+                            <input class='button button-primary button-hero load-customize hide-if-no-customize' type='submit' name='plugin_select' value='<?php echo esc_attr( __( 'Install Plugins', 'cga-plugin-helper' ) ); ?>'/> </input>
                         </td>
                     </tr>
                 </form>
