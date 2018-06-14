@@ -238,63 +238,16 @@ function pph_curated_plugin_list() {
     $pph_curated_plugins_dir = ( $uploads_dir['basedir'].'/pragmatica-plugin-helper' );
     
     //Checks if the required upload directory exists, and creates it if it doesn't.
-    if (!file_exists($pph_curated_plugins_dir) && !is_dir($pph_curated_plugins_dir)) {
-        mkdir($pph_curated_plugins_dir);
+    if ( !file_exists ( $pph_curated_plugins_dir ) && !is_dir( $pph_curated_plugins_dir ) ) {
+        mkdir ( $pph_curated_plugins_dir );
     } 
     
-    if (file_exists ( $pph_curated_plugins_dir.'/pph_curated_plugin_list.php')){
-        include ( $pph_curated_plugins_dir.'/pph_curated_plugin_list.php');
+    if ( file_exists ( $pph_curated_plugins_dir.'/custom-curated-plugin-list.php' ) ) {
+        include ( $pph_curated_plugins_dir.'/custom-curated-plugin-list.php' );
     }
         
     else{
-        $i=1;
-        $curated_plugins = array(
-        //SEO CATEGORY
-            '1'=>array(
-                "id"=>$i++,
-                "plugin_name"=>'Yoast SEO',
-                "plugin_uri"=>'https://downloads.wordpress.org/plugin/wordpress-seo.7.6.1.zip',
-                "category"=>'SEO',
-                "apply"=>'0',
-            ),
-            array(
-                "id"=>$i++,
-                "plugin_name"=>'Redirection',
-                "plugin_uri"=>'https://downloads.wordpress.org/plugin/redirection.3.2.zip',
-                "category"=>'SEO',
-                "apply"=>'0',
-            ),
-            array(
-                "id"=>$i++,
-                "plugin_name"=>'MetaSlider',
-                "plugin_uri"=>'https://downloads.wordpress.org/plugin/ml-slider.3.8.0.zip',
-                "category"=>'SEO',
-                "apply"=>'0',
-            ),
-            array(
-                "id"=>$i++,
-                "plugin_name"=>'All In One SEO Pack',
-                "plugin_uri"=>'https://downloads.wordpress.org/plugin/all-in-one-seo-pack.zip',
-                "category"=>'SEO',
-                "apply"=>'0',
-            ),
-        //MANAGEMENT CATEGORY
-            array(
-                "id"=>$i++,
-                "plugin_name"=>'Beaver Builder Plugin (Lite Version)',
-                "plugin_uri"=>'https://downloads.wordpress.org/plugin/beaver-builder-lite-version.zip',
-                "category"=>'Manage',
-                "apply"=>'0'
-            ),
-        //MISCELLANEOUS CATEGORY
-            array(
-                "id"=>$i++,
-                "plugin_name"=>'Hello Dolly',
-                "plugin_uri"=>'https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip',
-                "category"=>'Misc',
-                "apply"=>'0',
-            ),
-        );
+        include ( 'pph-curated-plugin-list.php' );
     }
     return ( $curated_plugins );
 }
@@ -436,13 +389,69 @@ function pph_plugin_form( $plugins ) {
                     <form method='post' style='text-align:center' name='plugin_select'>
         <?php
     foreach ( $plugins as $each => $key ) {
-            if ( $key['category'] == 'SEO' ) {
+            if ( $key['category'] == 'seo' ) {
                 ?>
                     <tr>
                         <td class='author column-author' style='text-align:center;'> <b> "<?php echo esc_attr( $key['plugin_name'] ); ?>" </b> </td>
                         <td class='author column-author' style='text-align:center;'> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
                     </tr>
                 <?php
+            }
+        }
+        ?>
+                </tbody>
+        <?php    
+//Code for the Design Category
+        ?>
+                <thead>
+                    <tr>
+                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Design', 'pragmatica-plugin-helper' ) ); ?></h2> </th>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                    </tr>
+                </thead>
+                <tbody>
+        <?php
+        foreach ( $plugins as $each => $key ) {
+            if ( $key['category']=='design' )  {
+            ?>
+                <tr>
+                    <td class='author column-author' style='text-align:center;'> <b>"<?php echo esc_attr( $key['plugin_name'] ); ?>"</b> </td>
+                    <td class='author column-author' style='text-align:center;'> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
+                </tr>
+            <?php
+            }
+        }
+        ?>
+                </tbody>
+        <?php    
+//Code for the Marketing Category
+        ?>
+                <thead>
+                    <tr>
+                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Marketing', 'pragmatica-plugin-helper' ) ); ?></h2> </th>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                    </tr>
+                </thead>
+                <tbody>
+        <?php
+        foreach ( $plugins as $each => $key ) {
+            if ( $key['category']=='market' )  {
+            ?>
+                <tr>
+                    <td class='author column-author' style='text-align:center;'> <b>"<?php echo esc_attr( $key['plugin_name'] ); ?>"</b> </td>
+                    <td class='author column-author' style='text-align:center;'> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
+                </tr>
+            <?php
             }
         }
         ?>
@@ -464,7 +473,119 @@ function pph_plugin_form( $plugins ) {
                 <tbody>
         <?php
         foreach ( $plugins as $each => $key ) {
-            if ( $key['category']=='Manage' )  {
+            if ( $key['category']=='manage' )  {
+            ?>
+                <tr>
+                    <td class='author column-author' style='text-align:center;'> <b>"<?php echo esc_attr( $key['plugin_name'] ); ?>"</b> </td>
+                    <td class='author column-author' style='text-align:center;'> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
+                </tr>
+            <?php
+            }
+        }
+        ?>
+                </tbody>
+        <?php    
+//Code for the Analytics Category
+        ?>
+                <thead>
+                    <tr>
+                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Analytics', 'pragmatica-plugin-helper' ) ); ?></h2> </th>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                    </tr>
+                </thead>
+                <tbody>
+        <?php
+        foreach ( $plugins as $each => $key ) {
+            if ( $key['category']=='analytics' )  {
+            ?>
+                <tr>
+                    <td class='author column-author' style='text-align:center;'> <b>"<?php echo esc_attr( $key['plugin_name'] ); ?>"</b> </td>
+                    <td class='author column-author' style='text-align:center;'> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
+                </tr>
+            <?php
+            }
+        }
+        ?>
+                </tbody>
+        <?php    
+//Code for the Social Category
+        ?>
+                <thead>
+                    <tr>
+                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Social', 'pragmatica-plugin-helper' ) ); ?></h2> </th>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                    </tr>
+                </thead>
+                <tbody>
+        <?php
+        foreach ( $plugins as $each => $key ) {
+            if ( $key['category']=='social' )  {
+            ?>
+                <tr>
+                    <td class='author column-author' style='text-align:center;'> <b>"<?php echo esc_attr( $key['plugin_name'] ); ?>"</b> </td>
+                    <td class='author column-author' style='text-align:center;'> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
+                </tr>
+            <?php
+            }
+        }
+        ?>
+                </tbody>
+        <?php    
+//Code for the Performance Category
+        ?>
+                <thead>
+                    <tr>
+                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Performance', 'pragmatica-plugin-helper' ) ); ?></h2> </th>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                    </tr>
+                </thead>
+                <tbody>
+        <?php
+        foreach ( $plugins as $each => $key ) {
+            if ( $key['category']=='performance' )  {
+            ?>
+                <tr>
+                    <td class='author column-author' style='text-align:center;'> <b>"<?php echo esc_attr( $key['plugin_name'] ); ?>"</b> </td>
+                    <td class='author column-author' style='text-align:center;'> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
+                </tr>
+            <?php
+            }
+        }
+        ?>
+                </tbody>
+        <?php    
+//Code for the Security Category
+        ?>
+                <thead>
+                    <tr>
+                        <th class='manage-column column-author' colspan='2' style='text-align:center;'> <h2><?php echo esc_attr( __( 'Security', 'pragmatica-plugin-helper' ) ); ?></h2> </th>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Plugin Name', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                        <th class='manage-column column-author' style='text-align:center;width:50%;'> <h3><?php echo esc_attr( __( 'Selection', 'pragmatica-plugin-helper' ) ); ?></h3> </th>
+                    </tr>
+                </thead>
+                <tbody>
+        <?php
+        foreach ( $plugins as $each => $key ) {
+            if ( $key['category']=='security' )  {
             ?>
                 <tr>
                     <td class='author column-author' style='text-align:center;'> <b>"<?php echo esc_attr( $key['plugin_name'] ); ?>"</b> </td>
@@ -492,7 +613,7 @@ function pph_plugin_form( $plugins ) {
                 <tbody>
         <?php
         foreach ( $plugins as $each => $key ) {
-            if ( $key['category'] == 'Misc' ) {
+            if ( $key['category'] == 'misc' ) {
             ?>
                 <tr>
                     <td class='author column-author' style='text-align:center;'> <b> "<?php echo esc_attr( $key['plugin_name'] ); ?>" </b> </td>
