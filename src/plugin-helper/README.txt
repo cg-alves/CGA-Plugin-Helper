@@ -45,6 +45,9 @@ e.g.
 
 == Changelog ==
 
+= 1.2.0 =
+* Removed $_SESSIONS dependency. This plugin will no longer conflict with caching.
+
 = 1.1.0 =
 * Added new curated plugins and categories
 * Added new translation strings for new categories
