@@ -45,6 +45,11 @@ e.g.
 
 == Changelog ==
 
+= 1.1.0 =
+* Added new curated plugins and categories
+* Added new translation strings for new categories
+* Separated curated plugins into a new file
+
 = 1.0.6 =
 * Changed $_SESSION to only start with init, and to die on logout
 * Added option to load a curated plugin list from the uploads directory of Wordpress
