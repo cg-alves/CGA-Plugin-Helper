@@ -15,6 +15,7 @@ This plugin will assist you in the installation of plugins, allowing you to choo
 This plugin is designed to assist end users in the installation of plugins. It allows you to choose from a curated list, manually search for plugins from the WP Store and export all currently active plugins into a list that can later be used to import them. This can be very useful for faster deployments.
 
 Stand out features are:
+
 * Download, install and activate plugins in a single click;
 * Choose plugins from a curated list;
 * Manually search for several plugins at once;
@@ -26,14 +27,10 @@ You can check out the source code, submit patches, improvements or translations,
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
 1. Upload the plugin files to the `/wp-content/plugins/plugin-helper` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
-3. Use the Settings->Plugin Name screen to configure the plugin
-4. (Make your instructions match the desired user flow for activating and installing your plugin. Include any steps that might be needed for explanatory purposes)
+3. Select "Plugin Helper" from the sidebar
+4. Select your desired method for installing plugins
 
 == Screenshots ==
 
