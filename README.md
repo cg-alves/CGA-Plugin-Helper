@@ -1,7 +1,7 @@
-![banner](https://raw.githubusercontent.com/cg-alves/Pragmatica-Plugin-Helper/dev/src/plugin-helper/assets/banner-1544x500.png)
-
 # CGA Plugin Helper
 A Wordpress Plugin Helper, designed to help the end user install plugins.
+
+![banner](https://raw.githubusercontent.com/cg-alves/Pragmatica-Plugin-Helper/dev/src/plugin-helper/assets/banner-1544x500.png)
 
 ## Features
 The Pragmatica Plugin Helper is a plugin designed for end-users and sys-admins alike.
