@@ -51,6 +51,7 @@ function cgaph_plugin_installer() {
 
 // This function will activate all plugins installed by the previous functions.
 function cgaph_plugin_activation() {
+    add_action('plugins_loaded','cgaph_session_starter');
     $selected_plugins = get_transient( 'plugin' );
 // Returns an array with all plugin information.
     $installed_plugins = get_plugins();
