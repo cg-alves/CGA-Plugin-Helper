@@ -3,7 +3,7 @@ Contributors: cgalves
 Tags: plugins, management, end-user, developer
 Requires at least: 4.9
 Tested up to: 4.9
-Stable tag: 4.9
+Stable tag: 1.2.0
 Requires PHP: 7
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
