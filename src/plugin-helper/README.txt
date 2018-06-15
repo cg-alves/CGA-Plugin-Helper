@@ -1,8 +1,8 @@
 === CGA Plugin Helper ===
 Contributors: cgalves
-Tags: plugins, management, end-user, developer
+Tags: plugins, management, end-user, developer, deployment
 Requires at least: 4.9
-Tested up to: 4.9
+Tested up to: 4.9.6
 Stable tag: 1.2.0
 Requires PHP: 7
 License: GPLv3
