@@ -29,7 +29,7 @@ function cgaph_plugin_form( $plugins ) {
                 ?>
                     <tr>
                         <td class='author column-author' style='text-align:center;'> <b> "<?php echo esc_attr( $key['plugin_name'] ); ?>" </b> </td>
-                        <td class='author column-author' style='text-align:center;'> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
+                        <td class='author column-author' style='text-align:center;'> <input type='hidden' value='0' name="<?php echo esc_attr( $key['id'] ); ?>"> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
                     </tr>
                 <?php
             }
@@ -57,7 +57,7 @@ function cgaph_plugin_form( $plugins ) {
             ?>
                 <tr>
                     <td class='author column-author' style='text-align:center;'> <b>"<?php echo esc_attr( $key['plugin_name'] ); ?>"</b> </td>
-                    <td class='author column-author' style='text-align:center;'> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
+                    <td class='author column-author' style='text-align:center;'> <input type='hidden' value='0' name="<?php echo esc_attr( $key['id'] ); ?>"> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
                 </tr>
             <?php
             }
@@ -85,7 +85,7 @@ function cgaph_plugin_form( $plugins ) {
             ?>
                 <tr>
                     <td class='author column-author' style='text-align:center;'> <b>"<?php echo esc_attr( $key['plugin_name'] ); ?>"</b> </td>
-                    <td class='author column-author' style='text-align:center;'> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
+                    <td class='author column-author' style='text-align:center;'> <input type='hidden' value='0' name="<?php echo esc_attr( $key['id'] ); ?>"> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
                 </tr>
             <?php
             }
@@ -113,7 +113,7 @@ function cgaph_plugin_form( $plugins ) {
             ?>
                 <tr>
                     <td class='author column-author' style='text-align:center;'> <b>"<?php echo esc_attr( $key['plugin_name'] ); ?>"</b> </td>
-                    <td class='author column-author' style='text-align:center;'> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
+                    <td class='author column-author' style='text-align:center;'> <input type='hidden' value='0' name="<?php echo esc_attr( $key['id'] ); ?>"> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
                 </tr>
             <?php
             }
@@ -141,7 +141,7 @@ function cgaph_plugin_form( $plugins ) {
             ?>
                 <tr>
                     <td class='author column-author' style='text-align:center;'> <b>"<?php echo esc_attr( $key['plugin_name'] ); ?>"</b> </td>
-                    <td class='author column-author' style='text-align:center;'> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
+                    <td class='author column-author' style='text-align:center;'> <input type='hidden' value='0' name="<?php echo esc_attr( $key['id'] ); ?>"> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
                 </tr>
             <?php
             }
@@ -169,7 +169,7 @@ function cgaph_plugin_form( $plugins ) {
             ?>
                 <tr>
                     <td class='author column-author' style='text-align:center;'> <b>"<?php echo esc_attr( $key['plugin_name'] ); ?>"</b> </td>
-                    <td class='author column-author' style='text-align:center;'> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
+                    <td class='author column-author' style='text-align:center;'> <input type='hidden' value='0' name="<?php echo esc_attr( $key['id'] ); ?>"> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
                 </tr>
             <?php
             }
@@ -197,7 +197,7 @@ function cgaph_plugin_form( $plugins ) {
             ?>
                 <tr>
                     <td class='author column-author' style='text-align:center;'> <b>"<?php echo esc_attr( $key['plugin_name'] ); ?>"</b> </td>
-                    <td class='author column-author' style='text-align:center;'> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
+                    <td class='author column-author' style='text-align:center;'> <input type='hidden' value='0' name="<?php echo esc_attr( $key['id'] ); ?>"> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
                 </tr>
             <?php
             }
@@ -225,7 +225,7 @@ function cgaph_plugin_form( $plugins ) {
             ?>
                 <tr>
                     <td class='author column-author' style='text-align:center;'> <b>"<?php echo esc_attr( $key['plugin_name'] ); ?>"</b> </td>
-                    <td class='author column-author' style='text-align:center;'> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
+                    <td class='author column-author' style='text-align:center;'> <input type='hidden' value='0' name="<?php echo esc_attr( $key['id'] ); ?>"> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
                 </tr>
             <?php
             }
@@ -253,7 +253,7 @@ function cgaph_plugin_form( $plugins ) {
             ?>
                 <tr>
                     <td class='author column-author' style='text-align:center;'> <b> "<?php echo esc_attr( $key['plugin_name'] ); ?>" </b> </td>
-                    <td class='author column-author' style='text-align:center;'> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
+                    <td class='author column-author' style='text-align:center;'> <input type='hidden' value='0' name="<?php echo esc_attr( $key['id'] ); ?>"> <input type='checkbox' name="<?php echo esc_attr( $key['id'] ); ?>" value='1'> </input> </td>
                 </tr>
             <?php
             }
