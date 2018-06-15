@@ -1,5 +1,5 @@
 === Pragmatica Plugin Helper ===
-Contributors: carlos.alves
+Contributors: cgalves
 Tags: plugins, management, end-user, developer
 Requires at least: 4.9.6
 Tested up to: 4.9.6
@@ -12,7 +12,7 @@ This plugin will assist you in the installation of plugins, allowing you to choo
 
 == Description ==
 
-This plugin is designed to assist end users in the installation of plugins. It allows you to choose from a curated list, manually search for plugins from the WP Store and export all currently active plugins into a list that can later be used to import them. This can be very useful for faster deployments and can be customized by developers who work for a lot of different customers to display a different list of curated plugins.
+This plugin is designed to assist end users in the installation of plugins. It allows you to choose from a curated list, manually search for plugins from the WP Store and export all currently active plugins into a list that can later be used to import them. This can be very useful for faster deployments.
 
 Stand out features are:
 * Download, install and activate plugins in a single click;
@@ -23,6 +23,8 @@ Stand out features are:
 * Use of Wordpress API to provide seamless integration.
 
 You can check out the source code, submit patches, improvements or translations, and report bugs at the project's github page: https://github.com/cg-alves/Pragmatica-Plugin-Helper.
+
+Warning: This plugin makes use of PHP Sessions and MAY break caching.
 
 == Installation ==
 
@@ -42,6 +44,14 @@ e.g.
 3. Manual plugin search
 
 == Changelog ==
+
+= 1.0.6 =
+* Changed $_SESSION to only start with init, and to die on logout
+* Added option to load a curated plugin list from the uploads directory of Wordpress
+* Plugin now checks if upload directory exists and creates it if it doesn't
+* Added 'pph' prefix to functions
+* Removed erroneously placed error reporting 
+* Fixed some translation strings
 
 = 1.0.0 =
 * First Stable Release
