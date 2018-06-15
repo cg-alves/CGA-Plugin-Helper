@@ -27,7 +27,7 @@ You can check out the source code, submit patches, improvements or translations,
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/plugin-helper` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/cga-plugin-helper` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 3. Select "Plugin Helper" from the sidebar
 4. Select your desired method for installing plugins
