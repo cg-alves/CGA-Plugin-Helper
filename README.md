@@ -1,3 +1,5 @@
+![banner](https://raw.githubusercontent.com/cg-alves/Pragmatica-Plugin-Helper/dev/src/plugin-helper/assets/banner-1544x500.png)
+
 # CGA Plugin Helper
 A Wordpress Plugin Helper, designed to help the end user install plugins.
 
