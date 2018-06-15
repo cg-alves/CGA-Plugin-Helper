@@ -44,8 +44,9 @@ e.g.
 == Changelog ==
 
 = 1.2.0 =
-* Removed $_SESSIONS dependency. This plugin will no longer conflict with caching.
-* Changed branding.
+* Removed $_SESSIONS dependency. This plugin will no longer conflict with caching
+* Changed branding
+* Fixed error that appeared when using the curated plugin install
 
 = 1.1.0 =
 * Added new curated plugins and categories
