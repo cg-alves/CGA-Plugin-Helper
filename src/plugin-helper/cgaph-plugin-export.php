@@ -38,7 +38,7 @@ function cgaph_export_plugins() {
                 <tfoot>
                     <tr>
                         <td class='author column-author' colspan='2' style='text-align:center;width:50%;'>
-                            <a class='button button-primary button-hero load-customize hide-if-no-customize' href='../wp-admin/admin.php?page=plugin-installer'><?php echo esc_attr( __( "Return to the Plugin's Homepage", 'cga-plugin-helper' ) ); ?></a>
+                            <a class='button button-primary button-hero load-customize hide-if-no-customize' href='admin.php?page=plugin-helper'><?php echo esc_attr( __( "Return to the Plugin's Homepage", 'cga-plugin-helper' ) ); ?></a>
                         </td>
                     </tr>
                 </tfoot>
