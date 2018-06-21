@@ -3,27 +3,27 @@ Contributors: cgalves
 Tags: plugins, management, end-user, developer, deployment
 Requires at least: 4.9
 Tested up to: 4.9.6
-Stable tag: 1.2.0
+Stable tag: 1.3.1
 Requires PHP: 7
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-This plugin will assist you in the installation of plugins, allowing you to choose from a curated list, manually search for plugins and export any active plugins into a text list.
+This plugin will assist you in the installation of plugins. Choose from a curated list, manually search for plugins and export all active plugins.
 
 == Description ==
 
-This plugin is designed to assist end users in the installation of plugins. It allows you to choose from a curated list, manually search for plugins from the WP Store and export all currently active plugins into a list that can later be used to import them. This can be very useful for faster deployments.
+This plugin is designed to assist users in the installation of plugins. It allows you to choose from a curated list, manually search for plugins from the WP Store and export all currently active plugins into a list. That list can then be used to import all of your plugins at once, expediting deployment.
 
-Stand out features are:
+= Features: =
 
-* Download, install and activate plugins in a single click;
-* Choose plugins from a curated list;
-* Manually search for several plugins at once;
-* Export all of your plugins into a list that you can then use to re-install them in another installation or deployment;
-* Easy, simple to understand code, that can be easily modified to suit your needs;
-* Use of Wordpress API to provide seamless integration.
+* Download, install and activate plugins in a single click
+* Choose plugins from a curated list
+* Manually search for several plugins at once
+* Export all of your plugins into a list that you can then use to re-install them in another installation or deployment
+* Easy, simple to understand code, that can be easily modified to suit your needs
+* Use of Wordpress API to provide seamless integration
 
-You can check out the source code, submit patches, improvements or translations, and report bugs at the project's github page: https://github.com/cg-alves/CGA-Plugin-Helper.
+You can check out the source code, submit patches or improvements, and report bugs at [the project's GitHub page](https://github.com/cg-alves/CGA-Plugin-Helper).
 
 == Installation ==
 
@@ -39,6 +39,13 @@ You can check out the source code, submit patches, improvements or translations,
 3. Manual plugin search
 
 == Changelog ==
+
+= 1.3.1 =
+* Fixed Upgrade/Activation bug
+
+= 1.3.0 =
+* Added function that will auto-update the installed plugins
+* Separated most functions into their own files
 
 = 1.2.0 =
 * Removed $_SESSIONS dependency. This plugin will no longer conflict with caching
@@ -64,4 +71,3 @@ You can check out the source code, submit patches, improvements or translations,
 * Added Curated List Function
 * Added Export Function
 * Added Support for Portuguese (Portugal) and English (US)
-
