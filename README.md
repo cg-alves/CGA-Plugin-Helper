@@ -4,7 +4,7 @@ A Wordpress Plugin Helper, designed to help the end user install plugins.
 ![banner](https://raw.githubusercontent.com/cg-alves/Pragmatica-Plugin-Helper/dev/src/plugin-helper/assets/banner-1544x500.png)
 
 ## Features
-The Pragmatica Plugin Helper is a plugin designed for end-users and sys-admins alike.
+The CGA Plugin Helper is a plugin designed for end-users and sys-admins alike.
 
 #### For End-Users
 * Install updates from a curated list with a single click;
