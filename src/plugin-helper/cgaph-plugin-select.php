@@ -41,7 +41,7 @@ if ( isset ( $_POST['plugin_select'] ) ) {
 ?>
 <div class='wrap'>
         <h1 class='wp-heading-inline'><?php echo esc_attr( __( 'Curated Plugin List', 'cga-plugin-helper' ) ); ?></h1>
-        <a class='page-title-action' href='../../wp-admin/admin.php?page=plugin-installer'><?php echo esc_attr( __( "Return to the Plugin's Homepage", 'cga-plugin-helper' ) ); ?></a>
+        <a class='page-title-action' href='admin.php?page=plugin-helper'><?php echo esc_attr( __( "Return to the Plugin's Homepage", 'cga-plugin-helper' ) ); ?></a>
         <hr class='wp-header-end'>
 <?php
     include_once ('cgaph-plugin-form.php');
