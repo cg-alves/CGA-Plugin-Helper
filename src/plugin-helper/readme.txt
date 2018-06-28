@@ -23,6 +23,8 @@ This plugin is designed to assist users in the installation of plugins. It allow
 * Easy, simple to understand code, that can be easily modified to suit your needs
 * Use of Wordpress API to provide seamless integration
 
+[youtube https://www.youtube.com/watch?v=NtrdcromI2Y]
+
 You can check out the source code, submit patches or improvements, and report bugs at [the project's GitHub page](https://github.com/cg-alves/CGA-Plugin-Helper).
 
 == Installation ==
